@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tour ET. : Explore Ethiopia
 
 Tour ET is an innovative web application designed to transform travel experiences in Ethiopia. Leveraging the MERN stack and Bootstrap, this platform offers an intuitive and comprehensive approach to discovering Ethiopia, from city escapades to historical adventures.
@@ -111,3 +112,6 @@ Welcome to the Tour ET. App - a state-of-the-art tour and travel  interactive an
 - Other third-party services as required by the application.
 
 
+=======
+# IndiaExplorer
+>>>>>>> 5d02b610ea12380a714bf04400871a7d95198519
