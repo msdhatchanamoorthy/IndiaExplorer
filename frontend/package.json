@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-react-hooks": "^7.0.1",
     "reinstall-node-modules": "^2.0.0"
   }
 }
