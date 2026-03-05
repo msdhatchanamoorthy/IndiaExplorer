@@ -161,5 +161,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  Made with ❤️ for Incredible India 🇮🇳
+  Made with dhatchana.dev for Incredible India 🇮🇳
 </p>
