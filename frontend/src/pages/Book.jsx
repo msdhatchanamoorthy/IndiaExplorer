@@ -28,7 +28,7 @@ function Book() {
   const [error, setError] = useState("");
 
   const { data: pkg, loading: pkgLoading } = useFetch(
-    `http://localhost:4000/api/package/${id}`
+    `https://indiaexplorer-production.up.railway.app/api/package/${id}`
   );
 
   useEffect(() => {
@@ -77,7 +77,7 @@ function Book() {
     };
 
     try {
-      const response = await fetch("http://localhost:4000/api/booking", {
+      const response = await fetch("https://indiaexplorer-production.up.railway.app/api/booking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

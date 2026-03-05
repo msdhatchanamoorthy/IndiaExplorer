@@ -13,7 +13,7 @@ function Rooms({ id, image, name, isRoom, setIsRoom, description }) {
     setLoading(true);
     try {
       const res = await fetch(
-        `http://localhost:4000/api/hotel/${id}/room?taken=true`,
+        `https://indiaexplorer-production.up.railway.app/api/hotel/${id}/room?taken=true`,
         {
           headers: { Authorization: `Bearer ${user.token}` },
         }

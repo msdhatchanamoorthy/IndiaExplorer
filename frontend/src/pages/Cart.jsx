@@ -13,7 +13,7 @@ function Cart() {
     dispatch({ type: "REMOVE", item });
 
     try {
-      await fetch(`http://localhost:4000/api/wishlist/${item._id}`, {
+      await fetch(`https://indiaexplorer-production.up.railway.app/api/wishlist/${item._id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${user.token}`,

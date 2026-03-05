@@ -12,7 +12,7 @@ import useFetch from "../customHook/useFetch";
 function PackageDetail() {
   const { id } = useParams();
   const { data: site, loading } = useFetch(
-    `http://localhost:4000/api/package/${id}`
+    `https://indiaexplorer-production.up.railway.app/api/package/${id}`
   );
   const [itemAdded, setItemAdded] = useState(false);
   const { state, dispatch } = useContext(CartContext);
@@ -26,7 +26,7 @@ function PackageDetail() {
     }
 
     const response = await fetch(
-      `http://localhost:4000/api/wishlist`,
+      `https://indiaexplorer-production.up.railway.app/api/wishlist`,
       {
         method: "POST",
         headers: {

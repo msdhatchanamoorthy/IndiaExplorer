@@ -24,7 +24,7 @@ function Contact() {
         setStatus({ type: '', msg: '' });
 
         try {
-            const response = await fetch("http://localhost:4000/api/contact", {
+            const response = await fetch("https://indiaexplorer-production.up.railway.app/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(fullInfo),

@@ -18,7 +18,7 @@ const ReviewsPage = () => {
   const { user } = useAuthContext();
 
   const { data: site, loading } = useFetch(
-    `http://localhost:4000/api/package/${id}`
+    `https://indiaexplorer-production.up.railway.app/api/package/${id}`
   );
 
   const handleSubmit = async (e) => {
@@ -36,7 +36,7 @@ const ReviewsPage = () => {
 
     setSubmitting(true);
     try {
-      const response = await fetch(`http://localhost:4000/api/comment`, {
+      const response = await fetch(`https://indiaexplorer-production.up.railway.app/api/comment`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${user.token}`,
@@ -49,7 +49,7 @@ const ReviewsPage = () => {
         }),
       });
 
-      const response1 = await fetch(`http://localhost:4000/api/package/${id}`, {
+      const response1 = await fetch(`https://indiaexplorer-production.up.railway.app/api/package/${id}`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${user.token}`,

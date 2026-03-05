@@ -8,10 +8,10 @@ import InfoBanner from "../Component/static/banner";
 const Home = () => {
   const [s_name, setName] = useState("");
   const { data: recentpkg, loading: loadingRecent } = useFetch(
-    "http://localhost:4000/api/package?limit=8&sort=-createdAt"
+    "https://indiaexplorer-production.up.railway.app/api/package?limit=8&sort=-createdAt"
   );
   const { data: popularPkg, loading: loadingPopular } = useFetch(
-    "http://localhost:4000/api/package?limit=8&sort=-rating"
+    "https://indiaexplorer-production.up.railway.app/api/package?limit=8&sort=-rating"
   );
 
   const cityList = recentpkg ? recentpkg.filter(city => city.name.toLowerCase().includes(s_name.toLowerCase())) : [];
