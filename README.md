@@ -1,117 +1,165 @@
-<<<<<<< HEAD
-# Tour ET. : Explore Ethiopia
+# 🇮🇳 Explore India Travel Platform
 
-Tour ET is an innovative web application designed to transform travel experiences in Ethiopia. Leveraging the MERN stack and Bootstrap, this platform offers an intuitive and comprehensive approach to discovering Ethiopia, from city escapades to historical adventures.
-
-# Introduction
-Welcome to the Tour ET. App - a state-of-the-art tour and travel  interactive and comprehensive online system. Built with MERN full stack.
-
-# Some UI Preview
-
-**Signin/signup page**
 <p align="center">
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(611).png" height="auto" width="600"/>
+  <img src="https://img.shields.io/badge/MERN-Stack-blue?style=for-the-badge&logo=mongodb" />
+  <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Node.js-Express-green?style=for-the-badge&logo=node.js" />
+  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb" />
 </p>
 
-**Home page**
-###### Users can see recent package and most popular package lists and also search by location or name
-<p align="center">
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(595).png" alt="Course Page" height="auto" width="400" />
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(596).png" alt="Course Page" height="auto" width="400" />
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(597).png" alt="Course Page" height="auto" width="400" />
-</p>
+> **Explore India** is a modern full-stack travel booking web application that transforms how people discover and experience the incredible diversity of India — from the snow-capped Himalayas to the golden beaches of Goa, from bustling metros to ancient heritage sites.
 
-**Package page**
-###### Users can see packages and also can filter using different parametes
-<p align="center">
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(598).png" alt="Course Page" height="auto" width="500" />
-</p>
+---
 
-**Package detail page**
-###### Users can see package's description, reviews, location, can add to cart, book the package, 
-<p align="center">
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(599).png" alt="Course Page" height="auto" width="500" />
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(602).png" alt="Course Page" height="auto" width="500" />
-</p>
+## 🌟 About the Project
 
-**Review page**
-###### Authenticated user can give review/comment, rate the package, like/dislike other's review
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(601).png" alt="Course Page" height="auto" width="500" />
+**Explore India** is built to make travel planning seamless and enjoyable. Whether you're a solo traveler, a family, or a group — our platform connects you with the best travel packages, hotels, and experiences across India.
 
+Built using the **MERN Stack** (MongoDB, Express.js, React.js, Node.js) with JWT-based authentication and a clean, responsive UI.
 
-**Book page**
-###### Customers check out payment, choose hotel, and room
-<p align="center">
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(603).png" alt="Course Page" height="auto" width="500" />
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(604).png" alt="Course Page" height="auto" width="500" />
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(605).png" alt="Course Page" height="auto" width="500" />
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(606).png" alt="Course Page" height="auto" width="500" />
-</p>
+---
 
-**Witshlist page**
-###### Customers can see packages stored in wishlist, remove from here, book here
-<p align="center">
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(607).png" alt="Course Page" height="auto" width="500" />
-</p>
+## ✨ Key Features
 
-**Contact page**
-###### Customers can reach us 
-<img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(608).png" alt="Course Page" height="auto" width="500" />
+| Feature | Description |
+|---------|-------------|
+| 🗺️ **Travel Packages** | Browse curated packages — city tours, adventure trips, pilgrimage routes, beach getaways |
+| 🔍 **Search & Filter** | Search destinations by name, location, category, or price |
+| ⭐ **Reviews & Ratings** | Read & write authentic traveler reviews and rate packages |
+| 🔖 **Wishlist** | Save favourite packages and book them anytime |
+| 📅 **Easy Booking** | Seamless booking flow with hotel and itinerary selection |
+| 👤 **User Authentication** | Secure login & registration with JWT tokens |
+| 🛡️ **Role-Based Access** | Separate roles for Admin, Staff & Customers |
+| 📢 **Notice Board** | Latest travel announcements, offers & alerts |
+| 📱 **Responsive Design** | Fully optimized for mobile, tablet & desktop |
 
+---
 
-**About page**
-###### users can know about us
-<p align="center">
-  <img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(609).png" alt="Course Page" height="auto" width="500" />
-  <img src="https://github.com/bemnet16/Tour_ET--MERN--/blob/UI-Preview/screenshots/Screenshot%20(610).png" alt="Course Page" height="auto" width="500" />
-</p>
-
-
-
-
-## Key Features
-
-- **Diverse Travel Packages**: Explore a variety of packages including city tours, group travels, adventure experiences, and historical journeys.
-- **Interactive Google Maps Integration**: Navigate through different locales with integrated Google Maps, enhancing the exploration of cities and historical sites.
-- **User Reviews**: Engage with community feedback through user reviews, helping travelers make informed decisions.
-- **Responsive and Intuitive Design**: Crafted with Bootstrap for a user-friendly experience across all devices.
-
-## Technologies Used
+## 🛠️ Tech Stack
 
 ### Frontend
-
-**Core Technologies:**
-- React: A JavaScript library for building user interfaces.
-- Bootstrap: For responsive design and UI components.
-
-**Maps and Navigation:**
-- Google Maps API: For interactive mapping and geographical features.
+- **React.js** — Component-based UI library
+- **React Router** — Client-side navigation
+- **Axios** — HTTP requests to backend APIs
+- **CSS3** — Custom animations and styling
 
 ### Backend
+- **Node.js** — JavaScript runtime
+- **Express.js** — RESTful API framework
+- **MongoDB** — NoSQL database
+- **Mongoose** — MongoDB ODM
 
-**Main Technologies (MERN Stack):**
-- MongoDB: NoSQL database for storing application data.
-- Express.js: Web application framework for Node.js.
-- React: Frontend JavaScript library.
-- Node.js: JavaScript runtime for executing server-side JavaScript.
+### Security
+- **JWT (JSON Web Tokens)** — Secure user authentication
+- **bcrypt.js** — Password hashing
 
-### Security and Authentication
-- JWT (JSON Web Tokens) for secure authentication.
-- bcrypt.js for password hashing and security measures.
+---
 
-## Getting Started
+## 📁 Project Structure
+
+```
+IndiaExplorer/
+├── backend/
+│   ├── controllers/       # Business logic
+│   ├── models/            # MongoDB schemas
+│   ├── routes/            # API route definitions
+│   ├── middleware/        # Auth & error middleware
+│   └── server.js          # Entry point
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/    # Reusable UI components
+│   │   ├── pages/         # Page-level components
+│   │   ├── context/       # Auth & global state
+│   │   └── App.jsx        # Root component
+│   └── public/
+│
+├── .gitignore
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
+- [Node.js](https://nodejs.org/) v16+
+- [MongoDB](https://www.mongodb.com/) (local or Atlas)
 - npm
-  ```sh
-  npm install npm@latest -g
 
-**Integrations:**
+```sh
+npm install npm@latest -g
+```
 
-- Other third-party services as required by the application.
+### Installation & Setup
 
+**1. Clone the repository**
+```sh
+git clone https://github.com/msdhatchanamoorthy/IndiaExplorer.git
+cd IndiaExplorer
+```
 
-=======
-# IndiaExplorer
->>>>>>> 5d02b610ea12380a714bf04400871a7d95198519
+**2. Setup Backend**
+```sh
+cd backend
+npm install
+```
+
+Create a `.env` file inside `backend/`:
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+PORT=5000
+```
+
+**3. Setup Frontend**
+```sh
+cd ../frontend
+npm install
+```
+
+**4. Run the Application**
+
+Start Backend (Terminal 1):
+```sh
+cd backend
+npm start
+```
+
+Start Frontend (Terminal 2):
+```sh
+cd frontend
+npm start
+```
+
+**5. Open in Browser**
+```
+http://localhost:3000
+```
+
+---
+
+## 🌐 Live Demo
+
+> Coming soon...
+
+---
+
+## 👨‍💻 Developer
+
+**M S Dhatchanamoorthy**
+- 🐙 GitHub: [@msdhatchanamoorthy](https://github.com/msdhatchanamoorthy)
+- 📁 Repository: [IndiaExplorer](https://github.com/msdhatchanamoorthy/IndiaExplorer)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<p align="center">
+  Made with ❤️ for Incredible India 🇮🇳
+</p>
