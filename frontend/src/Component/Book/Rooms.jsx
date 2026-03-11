@@ -13,7 +13,7 @@ function Rooms({ id, image, name, isRoom, setIsRoom, description }) {
     setLoading(true);
     try {
       const res = await fetch(
-        `https://indiaexplorer-production.up.railway.app/api/hotel/${id}/room?taken=true`,
+        `/api/hotel/${id}/room?taken=true`,
         {
           headers: { Authorization: `Bearer ${user.token}` },
         }
@@ -117,3 +117,4 @@ function Rooms({ id, image, name, isRoom, setIsRoom, description }) {
 }
 
 export default Rooms;
+

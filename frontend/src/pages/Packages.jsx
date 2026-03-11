@@ -22,7 +22,7 @@ const Packages = () => {
   const [filterOpen, setFilterOpen] = useState(false);
 
   const { data, loading } = useFetch(
-    `https://indiaexplorer-production.up.railway.app/api/package?page=${page}`,
+    `/api/package?page=${page}`,
     page
   );
 
@@ -46,7 +46,7 @@ const Packages = () => {
     const rate = dropDown.rate !== "any" ? `rating=${dropDown.rate}` : "";
     const query = [type, price, rate].filter(Boolean).join("&");
 
-    const response = await fetch(`https://indiaexplorer-production.up.railway.app/api/package?${query}`);
+    const response = await fetch(`/api/package?${query}`);
     const result = await response.json();
     if (response.ok) setDatas(result.data?.packages || result.data || []);
     setFilterOpen(false);
@@ -231,3 +231,4 @@ const Packages = () => {
 };
 
 export default Packages;
+

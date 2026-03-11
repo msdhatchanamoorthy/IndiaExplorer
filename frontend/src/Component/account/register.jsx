@@ -21,7 +21,7 @@ const Register = () => {
     setError("");
     setLoading(true);
     try {
-      const response = await fetch("https://indiaexplorer-production.up.railway.app/api/user/signup", {
+      const response = await fetch("/api/user/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(fullInfo),
@@ -155,3 +155,4 @@ const Register = () => {
 };
 
 export default Register;
+
