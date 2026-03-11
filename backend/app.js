@@ -32,9 +32,11 @@ if (process.env.NODE_ENV === 'development') {
   console.log('Development mode...');
 }
 
+app.set('trust proxy', 1);
+
 // Limit requests from same API
 const limiter = rateLimit({
-  max: 100,
+  max: 500, // relaxed limit for deployed site
   windowMs: 60 * 60 * 1000,
   message: 'Too many requests from this IP, please try again in an hour!'
 });
