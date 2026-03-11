@@ -10,7 +10,7 @@ const reducer = (state, action) => {
     case "ADD":
       return [...state, action.item];
     case "SET":
-      return [...action.item];
+      return Array.isArray(action.item) ? [...action.item] : [];
     case "REMOVE":
       const newArr = [...state];
       newArr.splice(state.index, 1);
