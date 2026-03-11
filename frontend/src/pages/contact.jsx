@@ -24,7 +24,7 @@ function Contact() {
         setStatus({ type: '', msg: '' });
 
         try {
-            const response = await fetch("/api/contact", {
+            const response = await fetch("https://indiaexplorer.onrender.com/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(fullInfo),

@@ -12,7 +12,7 @@ import useFetch from "../customHook/useFetch";
 function PackageDetail() {
   const { id } = useParams();
   const { data: site, loading } = useFetch(
-    `/api/package/${id}`
+    `https://indiaexplorer.onrender.com/api/package/${id}`
   );
   const [itemAdded, setItemAdded] = useState(false);
   const { state, dispatch } = useContext(CartContext);
@@ -26,7 +26,7 @@ function PackageDetail() {
     }
 
     const response = await fetch(
-      `/api/wishlist`,
+      `https://indiaexplorer.onrender.com/api/wishlist`,
       {
         method: "POST",
         headers: {

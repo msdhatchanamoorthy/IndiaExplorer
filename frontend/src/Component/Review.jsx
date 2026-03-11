@@ -9,7 +9,7 @@ function Review({ unique }) {
   const fetchReviews = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`/api/package/${unique}/comment`);
+      const response = await fetch(`https://indiaexplorer.onrender.com/api/package/${unique}/comment`);
       const result = await response.json();
       if (response.ok) {
         setReviews(result.data?.comments || result.data || []);
@@ -90,7 +90,7 @@ const EachReview = ({ _id, user: userName, text, like, dislike, rating }) => {
     }
 
     try {
-      await fetch(`/api/comment/${_id}`, {
+      await fetch(`https://indiaexplorer.onrender.com/api/comment/${_id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

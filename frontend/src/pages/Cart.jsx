@@ -13,7 +13,7 @@ function Cart() {
     dispatch({ type: "REMOVE", item });
 
     try {
-      await fetch(`/api/wishlist/${item._id}`, {
+      await fetch(`https://indiaexplorer.onrender.com/api/wishlist/${item._id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${user.token}`,

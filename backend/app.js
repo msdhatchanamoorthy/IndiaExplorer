@@ -1,7 +1,5 @@
 import express from "express";
 import mongoose from "mongoose";
-import path from "path";
-import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 import cors from "cors";
 import helmet from "helmet";
@@ -22,9 +20,6 @@ import wishlistRouter from "./routes/wishlistRouter.js";
 import contactRouter from "./routes/contactRouter.js";
 
 dotenv.config();
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 
@@ -68,17 +63,9 @@ app.use("/api/room", roomRouter);
 app.use("/api/booking", bookingRouter);
 app.use("/api/contact", contactRouter);
 
-// Serve static frontend files
-app.use(express.static(path.join(__dirname, "../frontend/build")));
-
-// Handle unhandled API routes
-app.all('/api/*', (req, res, next) => {
+// Handle unhandled routes
+app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
-});
-
-// For any other route, send the React app
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../frontend", "build", "index.html"));
 });
 
 // GLOBAL ERROR HANDLING MIDDLEWARE

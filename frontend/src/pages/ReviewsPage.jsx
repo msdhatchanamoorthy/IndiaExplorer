@@ -18,7 +18,7 @@ const ReviewsPage = () => {
   const { user } = useAuthContext();
 
   const { data: site, loading } = useFetch(
-    `/api/package/${id}`
+    `https://indiaexplorer.onrender.com/api/package/${id}`
   );
 
   const handleSubmit = async (e) => {
@@ -36,7 +36,7 @@ const ReviewsPage = () => {
 
     setSubmitting(true);
     try {
-      const response = await fetch(`/api/comment`, {
+      const response = await fetch(`https://indiaexplorer.onrender.com/api/comment`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${user.token}`,
@@ -49,7 +49,7 @@ const ReviewsPage = () => {
         }),
       });
 
-      const response1 = await fetch(`/api/package/${id}`, {
+      const response1 = await fetch(`https://indiaexplorer.onrender.com/api/package/${id}`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${user.token}`,

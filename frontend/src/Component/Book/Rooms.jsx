@@ -13,7 +13,7 @@ function Rooms({ id, image, name, isRoom, setIsRoom, description }) {
     setLoading(true);
     try {
       const res = await fetch(
-        `/api/hotel/${id}/room?taken=true`,
+        `https://indiaexplorer.onrender.com/api/hotel/${id}/room?taken=true`,
         {
           headers: { Authorization: `Bearer ${user.token}` },
         }

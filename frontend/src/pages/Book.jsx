@@ -28,7 +28,7 @@ function Book() {
   const [error, setError] = useState("");
 
   const { data: pkg, loading: pkgLoading } = useFetch(
-    `/api/package/${id}`
+    `https://indiaexplorer.onrender.com/api/package/${id}`
   );
 
   useEffect(() => {
@@ -77,7 +77,7 @@ function Book() {
     };
 
     try {
-      const response = await fetch("/api/booking", {
+      const response = await fetch("https://indiaexplorer.onrender.com/api/booking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
