@@ -3,6 +3,7 @@ import { FaStar, FaRegStar, FaArrowRight, FaFilter, FaTimes } from "react-icons/
 import { MdLocationOn } from "react-icons/md";
 import { Link } from "react-router-dom";
 import useFetch from "../customHook/useFetch";
+import BASE_URL from "../config";
 
 const SkeletonListCard = () => (
   <div className="pkg-list-card" style={{ overflow: "hidden" }}>
@@ -22,7 +23,7 @@ const Packages = () => {
   const [filterOpen, setFilterOpen] = useState(false);
 
   const { data, loading } = useFetch(
-    `https://indiaexplorer.onrender.com/api/package?page=${page}`,
+    `${BASE_URL}/package?page=${page}`,
     page
   );
 
@@ -46,7 +47,7 @@ const Packages = () => {
     const rate = dropDown.rate !== "any" ? `rating=${dropDown.rate}` : "";
     const query = [type, price, rate].filter(Boolean).join("&");
 
-    const response = await fetch(`https://indiaexplorer.onrender.com/api/package?${query}`);
+    const response = await fetch(`${BASE_URL}/package?${query}`);
     const result = await response.json();
     if (response.ok) setDatas(result.data?.packages || result.data || []);
     setFilterOpen(false);

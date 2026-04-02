@@ -4,14 +4,15 @@ import { FaArrowRight, FaMapMarkerAlt, FaStar, FaShieldAlt, FaHistory, FaHiking,
 import useFetch from "../customHook/useFetch";
 import Swipper from "../Component/static/Swipper";
 import InfoBanner from "../Component/static/banner";
+import BASE_URL from "../config";
 
 const Home = () => {
   const [s_name, setName] = useState("");
   const { data: recentpkg, loading: loadingRecent } = useFetch(
-    "https://indiaexplorer.onrender.com/api/package?limit=8&sort=-createdAt"
+    `${BASE_URL}/package?limit=8&sort=-createdAt`
   );
   const { data: popularPkg, loading: loadingPopular } = useFetch(
-    "https://indiaexplorer.onrender.com/api/package?limit=8&sort=-rating"
+    `${BASE_URL}/package?limit=8&sort=-rating`
   );
 
   const cityList = recentpkg ? recentpkg.filter(city => city.name.toLowerCase().includes(s_name.toLowerCase())) : [];

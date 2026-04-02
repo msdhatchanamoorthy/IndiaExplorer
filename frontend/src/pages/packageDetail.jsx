@@ -8,11 +8,12 @@ import Review from "../Component/Review";
 import { useAuthContext } from "../customHook/useAuthContext";
 import { CartContext } from "../context/cartContex";
 import useFetch from "../customHook/useFetch";
+import BASE_URL from "../config";
 
 function PackageDetail() {
   const { id } = useParams();
   const { data: site, loading } = useFetch(
-    `https://indiaexplorer.onrender.com/api/package/${id}`
+    `${BASE_URL}/package/${id}`
   );
   const [itemAdded, setItemAdded] = useState(false);
   const { state, dispatch } = useContext(CartContext);
@@ -26,7 +27,7 @@ function PackageDetail() {
     }
 
     const response = await fetch(
-      `https://indiaexplorer.onrender.com/api/wishlist`,
+      `${BASE_URL}/wishlist`,
       {
         method: "POST",
         headers: {
